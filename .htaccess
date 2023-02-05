@@ -1,8 +1,12 @@
-Opsi -Indeks
-
 <ifmodule mod_deflate.c> 
 AddOutputFilterByType DEFLATE teks/teks css/teks html/aplikasi biasa/teks javascript/aplikasi xml/aplikasi xml/aplikasi xhtml+xml/aplikasi rss+xml/aplikasi x-javascript 
 </ifmodule>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$"> 
+Set header Cache-Control "max-age=29030400, publik" 
+</FilesMatch>
+
+Opsi -Indeks
 
 # MULAI GZIP # 
 kompresi mod_gzip (legacy, Apache 1.3) 

@@ -1,3 +1,5 @@
+IndexOptions +FancyIndexing
+
 <ifmodule mod_deflate.c> 
 AddOutputFilterByType DEFLATE teks/teks css/teks html/aplikasi biasa/teks javascript/aplikasi xml/aplikasi xml/aplikasi xhtml+xml/aplikasi rss+xml/aplikasi x-javascript 
 </ifmodule>

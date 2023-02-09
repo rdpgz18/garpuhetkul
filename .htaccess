@@ -34,3 +34,11 @@ BrowserMatch bMSIE !no-gzip !gzip-only-text/html
 Header append Vary User-Agent 
 </IfModule> 
 # END DEFLATE
+
+#DELETE EXTENTION
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+</IfModule>
